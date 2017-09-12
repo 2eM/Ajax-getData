@@ -11,9 +11,10 @@ function getData() {
                 else  $('#section-one div:last').attr('id', 'dane-programisty'+buttonClickCounter);
             $('#section-one div:last').prepend(
                     '<h2>Dane programisty. Pobranie nr '+ buttonClickCounter +'</h2>'+
-                    'User ID : ' + resultJSON.userId + '<br>' +
-                    'User Name : ' + resultJSON.userName + '<br>' +
-                    'User URL : ' + resultJSON.userURL + '<br>'
+                    'Imie : ' + resultJSON.imie + '<br>' +
+                    'Nazwisko : ' + resultJSON.nazwisko + '<br>' +
+                    'Zawód : ' + resultJSON.zawod + '<br>' +
+                    'Firma : ' + resultJSON.firma + '<br>'
                 );
                 buttonClickCounter++ ;
         },
